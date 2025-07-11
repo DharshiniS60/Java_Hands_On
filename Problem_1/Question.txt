@@ -1,0 +1,74 @@
+Grain_SBQ
+
+Create a class Grain with below
+
+attributes:
+
+Class:Grain
+
+grainId - int
+
+grainName - String
+
+state - String
+
+qtyInQuintal - int
+
+Write getters, setters and parameterized constructor in the above mentioned attribute sequence as required.
+
+Create class Solution with main method.
+
+Implement two static methods - countGrainByGivenName and getMinGrainFromMaharashtra in Solution class.
+
+countGrainByGivenName:
+
+Create a static method countGrainByGivenName in the Solution class. The method will return the count of Grain from array of Grain objects for the given Name. If no Grain with the given Name is present in the array of Grain objects then the method should return 0.
+
+getMinGrainFromMaharashtra:
+
+Create a static method getMinGrainFromMaharashtra in the Solution class. This method will take an array of Grain objects and returns the Grain object having the minimum quantity(qtyInQuintal) from Maharashtra state. if found print the Grain in the main function, else return null if not found.
+
+Note:
+
+All the searches should be case insensitive.
+
+These methods should be called from the main method.
+
+Write code in the main method to perform the following tasks:
+
+Take the necessary input variable and call countGrainByGivenName. For this method - The main method should print the returned value if it is greater than 0 else it should print "No Grains with matching names are found".
+
+Take the necessary input variable and call getMinGrainFromMaharashtra. For this method - The main method should print the Grain object details as it is, if the returned value is not null, or it should print "No Grains with matching names are found".
+
+Also, write the code for accepting the inputs and printing the outputs. Don't use any static test or formatting for printing the result. Just invoke the method and print the result.
+
+
+
+Sample Input:
+
+4
+111
+Rice
+TamilNadu
+500
+112
+WHEAT
+Maharashtra
+300
+113
+RICE
+MAHARASHTRA
+200
+114
+Millet
+TamilnNadu
+400
+rice
+
+Sample Output:
+
+2
+113
+RICE
+MAHARASHTRA
+200
