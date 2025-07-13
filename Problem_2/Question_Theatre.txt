@@ -1,0 +1,54 @@
+Create a class Theatre with the below attributes:
+theatreId – int
+theatreName – String
+seatCapacity – int
+ticketRate – double
+theatreRating – int
+The above attributes should be private. Write getters, setters, and parameterized constructor as required. Create class Solution with main method.
+Implement two static methods - findTheatreCategory and findSecondHighestTicket in Solution class.
+findTheatreCategory method:
+This method will take two input parameters: array of Theatre objects and an int value.
+The method will find out the category of theatre for the given theatreId (the int parameter passed).
+The method will return "Premium" as category if the seatCapacity of theatre is greater than 1000 and theatreRating is greater than or equal to 4.
+The method will return "Non Premium" as category if the theatre is found but does not meet premium criteria.
+If no Theatre with the given theatreId is present in the array, then the method should return null.
+findSecondHighestTicket method:
+This method will take an array of Theatre objects as input parameter.
+The method will return the Theatre object with second highest ticketRate if and only if the theatreRating is greater than or equal to 2.
+Otherwise, the method should return null.
+Note: theatreId is unique.
+No two Theatre objects would have same ticketRate and theatreRating.
+The above mentioned static methods should be called from the main method.
+For findTheatreCategory method – The main method should print the category as "Premium" or "Non Premium" based on the calculation, if the returned value is not null.
+If the returned value is null, then it should print "There is no Theatre with the given theatreId".
+For findSecondHighestTicket method – The main method should print the theatreName from returned Theatre object if the returned value is not null.
+If the returned value is null then it should print "No valid theatres are available".
+Before calling static methods in main, use Scanner object to read the values of four Theatre objects referring attributes in the above attribute sequence.
+Next, read an int parameter for capturing theatreId to search.
+________________________________________
+Sample Input:
+
+Central City Opera House
+900
+24
+4
+101
+Paramount Theatre
+1100
+22
+5
+102
+Radio City Music Hall
+1500
+25
+4
+103
+Schermerhorn Symphony Center
+2000
+21
+3
+102
+Sample Output:
+Premium
+Central City Opera House
+
