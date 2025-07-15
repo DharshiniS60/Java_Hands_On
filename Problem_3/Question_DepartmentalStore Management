@@ -1,1 +1,59 @@
+Java: DepartmentalStore Management
+Create a class DepartmentalStore with the below attributes:
+•	storeId – String
+•	storeName – String
+•	location – String
+•	noofWorkers – int
+•	rating – int
+Write getters, setters and parameterized constructor in the above mentioned attribute sequence as required.
+Create class Solution with main method.
+Implement two static methods findAverageWorkersInSpecificLocation and findStoreDetailsForGivenLocation in the Solution class.
+Method: findAverageWorkersInSpecificLocation
+•	This method will take array of DepartmentalStore objects and a String parameter.
+•	This method will return the average workers of DepartmentalStores if storeId of the DepartmentalStore starts with the given startsWithInput (the String parameter passed).
+•	If no storeId of DepartmentalStores starts with the given input in the array, the method should return 0.
+•	For example, if the storeId is "Chn001" and startsWithInput is "Chn" then it is a match.
+Method: findStoreDetailsForGivenLocation
+•	This method will take two input parameters: array of DepartmentalStore objects and a String parameter.
+•	The method will return a DepartmentalStore object array in ascending order of their rating, from the array of DepartmentalStore objects whose location attribute matches with the given location (String parameter passed).
+•	If no DepartmentalStores with the given location are present in the array, then the method should return null.
+Note:
+•	No two DepartmentalStores would have the same rating and storeId.
+•	All the searches should be case-sensitive.
+•	The above mentioned static methods should be called from the main method.
+In main method:
+•	For findAverageWorkersInSpecificLocation method – print the average workers (noofWorkers) as it is, if the returned value is greater than 0, or print "No stores are available with the given input".
+•	For findStoreDetailsForGivenLocation method – print the storeName of each DepartmentalStore from the returned array (in same order as received), or print "No stores present in the given location" if returned value is null.
+Before calling these static methods in main, use Scanner object to read the values of four DepartmentalStore objects, referring attributes in the above mentioned attribute sequence.
+Next, read the values for two String parameters for capturing startsWithInput and location respectively.
 
+Sample Input:
+
+Chn100  
+AAA  
+Chennai  
+250  
+5  
+Blr101  
+BBB  
+Bangalore  
+150  
+4  
+Chn103  
+CCC  
+Chennai  
+220  
+5  
+Blr104  
+DDD  
+Bangalore  
+170  
+3  
+Chn  
+Bangalore
+
+Sample Output:
+
+235  
+DDD  
+BBB
