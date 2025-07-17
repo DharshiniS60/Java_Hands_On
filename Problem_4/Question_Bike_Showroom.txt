@@ -1,1 +1,90 @@
+java sbq bikeva_SBQ_Bike
+Bike showroom
+create a class Bike with the below private attributes:
+id - int
+quantity - int
+name - String
+price - int
+Write getters, setters and parameterized constructors in the above-mentioned attribute sequence as required.
+Create a class Solution with the main method Implement two static methods - findMaxPriceOfBike and searchBikeByName in Solution class.
+findMaxPriceOfBike
+Create a static method findMaxPriceOfBike in the Solution class. This method will take an array of Bike objects and returns the bike Object with max price if found, else return null if not found.
+searchBikeByName
+Create a static method searchBikeByName in the Solution class. This method will take an array of Bike objects and Name as input and returns the Bike object having the mentioned Name if found else return null if not found.
+These methods should be called from the main method.
+Write code to perform the following tasks:
+1.	Take necessary input variable and call findMaxPriceOfBike. For this method - The main method should print the Bike Object with the max price as it is the returned value is not null else it should print "No Bike found with mentioned attribute".
+2.	Take the necessary input variable and call searchBikeByName. For this method - The main method should print the Bike object details as it is if the returned value is not null, or it should print "No Bike found with mentioned attribute".
+The above mentioned static methods should be called from the main method. Also, write the code for accepting the inputs and printing the outputs. Don't use any static test or formatting for printing the result. Just invoke the method and print the result.
+Note:
+All String comparison needs to be case in-sensitive
+You can use/refer to the below-given sample input and output to verify your solution.
+
+
+Sample Input 1
+
+
+101  
+2  
+TVS Rider  
+110000  
+102  
+3  
+Yamaha FZ  
+150000  
+103  
+11  
+Royal Enfield  
+300000  
+104  
+20  
+Dominar  
+230000  
+Dominar
+
+
+
+Sample Output 1
+
+id-103  
+quantity-11  
+name-Royal Enfield  
+price-300000  
+id-104  
+quantity-20  
+name-Dominar  
+price-230000
+
+
+Sample Input 2
+
+
+101  
+0  
+Pulsar  
+110000  
+102  
+0  
+Glamour  
+150000  
+103  
+0  
+Shine  
+100000  
+104  
+0  
+MT  
+200000  
+Dominar
+
+
+Sample Output 2
+
+id-104  
+quantity-0  
+name-MT  
+price-200000  
+No Bike found with mentioned attribute
+
+
 
